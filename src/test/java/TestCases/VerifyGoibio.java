@@ -14,7 +14,7 @@ import Resources.constantsGoibo;
 public class VerifyGoibio extends BaseClass3{
 	
 	@Test
-	public void goibio()   {
+	public void goibio() throws InterruptedException   {
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		
@@ -74,6 +74,10 @@ public class VerifyGoibio extends BaseClass3{
 		obj.clickbutton().click();
 		
 		obj.clicknewdate().click();
+		
+		obj.clickcancal().click();
+		
+		Thread.sleep(15000);
 		
 	}
 }
